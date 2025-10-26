@@ -2,7 +2,6 @@
 const nextConfig = {
 	reactStrictMode: true,
 	// Production optimizations
-	swcMinify: true,
 	compiler: {
 		// Remove console logs in production
 		removeConsole: process.env.NODE_ENV === "production",
