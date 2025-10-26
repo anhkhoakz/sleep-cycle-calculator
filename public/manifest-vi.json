@@ -1,0 +1,51 @@
+{
+        "name": "Máy Tính Chu Kỳ Ngủ",
+        "short_name": "Máy Tính Ngủ",
+        "description": "Tính toán thời gian đi ngủ tối ưu dựa trên chu kỳ ngủ để thức dậy sảng khoái",
+        "start_url": "/vi",
+        "display": "standalone",
+        "background_color": "#f8fafc",
+        "theme_color": "#6366f1",
+        "orientation": "portrait-primary",
+        "icons": [
+                {
+                        "src": "/vite.svg",
+                        "sizes": "any",
+                        "type": "image/svg+xml",
+                        "purpose": "any maskable"
+                },
+                {
+                        "src": "/vite.svg",
+                        "sizes": "192x192",
+                        "type": "image/svg+xml"
+                },
+                {
+                        "src": "/vite.svg",
+                        "sizes": "512x512",
+                        "type": "image/svg+xml"
+                }
+        ],
+        "categories": [
+                "health",
+                "lifestyle",
+                "utilities"
+        ],
+        "lang": "vi",
+        "dir": "ltr",
+        "scope": "/vi",
+        "prefer_related_applications": false,
+        "shortcuts": [
+                {
+                        "name": "Tính Toán Ngủ",
+                        "short_name": "Tính Toán",
+                        "description": "Tính nhanh giờ ngủ tối ưu",
+                        "url": "/vi",
+                        "icons": [
+                                {
+                                        "src": "/vite.svg",
+                                        "sizes": "96x96"
+                                }
+                        ]
+                }
+        ]
+}

@@ -1,0 +1,82 @@
+{
+        "common": {
+                "title": "Máy Tính Chu Kỳ Ngủ",
+                "subtitle": "Tính toán thời gian đi ngủ tối ưu dựa trên chu kỳ ngủ để thức dậy sảng khoái",
+                "darkMode": "Chế Độ Tối",
+                "lightMode": "Chế Độ Sáng",
+                "settings": "Cài Đặt",
+                "howItWorks": "Cách Hoạt Động",
+                "proTip": "Mẹo:",
+                "close": "Đóng",
+                "save": "Lưu",
+                "cancel": "Hủy",
+                "ok": "OK"
+        },
+        "calculator": {
+                "title": "Máy Tính Ngủ",
+                "wakeTime": "Thời Gian Thức Dậy",
+                "fallAsleepBuffer": "Thời Gian Chìm Vào Giấc Ngủ",
+                "minutes": "phút",
+                "cycles": "chu kỳ",
+                "hours": "giờ",
+                "bedtime": "Giờ Đi Ngủ",
+                "totalSleep": "Tổng Thời Gian Ngủ",
+                "quality": "Chất Lượng",
+                "optimal": "Ngủ Tối Ưu",
+                "good": "Ngủ Tốt",
+                "minimal": "Ngủ Tối Thiểu",
+                "copyTime": "Sao Chép Thời Gian",
+                "exportCalendar": "Xuất Ra Lịch",
+                "saveSchedule": "Lưu Lịch Trình",
+                "quickSelect": "Chọn nhanh",
+                "noBuffer": "Không có thời gian đệm",
+                "timeToFallAsleep": "Thời gian chìm vào giấc ngủ"
+        },
+        "info": {
+                "sleepCycle": "Chu Kỳ Ngủ",
+                "cycleLength": "Mỗi chu kỳ ngủ kéo dài khoảng 90 phút và bao gồm các giai đoạn ngủ nhẹ, ngủ sâu và REM.",
+                "calculation": "Bằng cách tính ngược từ thời gian thức dậy mong muốn, chúng ta tìm ra giờ đi ngủ tối ưu cho phép bạn hoàn thành các chu kỳ ngủ đầy đủ.",
+                "wakeUpTip": "Thức dậy vào cuối một chu kỳ hoàn chỉnh giúp bạn cảm thấy sảng khoái và tỉnh táo hơn.",
+                "sleepStages": "Các Giai Đoạn Ngủ",
+                "lightSleep": "Ngủ Nhẹ",
+                "deepSleep": "Ngủ Sâu",
+                "remSleep": "Ngủ REM",
+                "stageDescription": "Mỗi giai đoạn đóng vai trò quan trọng trong việc phục hồi thể chất, củng cố trí nhớ và phục hồi tinh thần."
+        },
+        "settings": {
+                "title": "Cài Đặt",
+                "preferences": "Tùy Chọn",
+                "notifications": "Thông Báo",
+                "enableNotifications": "Bật Nhắc Nhở Giờ Ngủ",
+                "reminderTime": "Thời Gian Nhắc Nhở",
+                "preferredCycles": "Số Chu Kỳ Ngủ Ưa Thích",
+                "fallAsleepBuffer": "Thời Gian Chìm Vào Giấc Ngủ",
+                "clearData": "Xóa Tất Cả Dữ Liệu",
+                "clearDataConfirm": "Bạn có chắc chắn muốn xóa tất cả dữ liệu đã lưu? Hành động này không thể hoàn tác.",
+                "dataCleared": "Tất cả dữ liệu đã được xóa thành công.",
+                "exportData": "Xuất Dữ Liệu",
+                "importData": "Nhập Dữ Liệu"
+        },
+        "pwa": {
+                "installTitle": "Cài Đặt Máy Tính Ngủ",
+                "installDescription": "Cài đặt ứng dụng này trên thiết bị của bạn để truy cập nhanh và sử dụng offline.",
+                "installButton": "Cài Đặt Ứng Dụng",
+                "dismissButton": "Không Phải Bây Giờ",
+                "iosInstallInstructions": "Để cài đặt ứng dụng này trên thiết bị iOS, nhấn nút Chia sẻ và sau đó 'Thêm vào Màn hình chính'.",
+                "androidInstallInstructions": "Để cài đặt ứng dụng này trên thiết bị Android, nhấn nút menu và sau đó 'Thêm vào Màn hình chính'."
+        },
+        "quickReference": {
+                "title": "Tham Khảo Nhanh",
+                "cycles4": "4 Chu Kỳ (6h)",
+                "cycles5": "5 Chu Kỳ (7.5h)",
+                "cycles6": "6 Chu Kỳ (9h)",
+                "recommended": "Khuyến Nghị",
+                "minimum": "Tối Thiểu"
+        },
+        "notifications": {
+                "bedtimeReminder": "Nhắc Nhở Giờ Ngủ",
+                "timeToSleep": "Đã đến giờ đi ngủ! Giờ ngủ tối ưu của bạn là",
+                "permissionDenied": "Quyền thông báo bị từ chối",
+                "permissionGranted": "Đã bật thông báo thành công"
+        }
+}

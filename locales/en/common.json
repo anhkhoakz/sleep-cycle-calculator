@@ -1,0 +1,82 @@
+{
+        "common": {
+                "title": "Sleep Cycle Calculator",
+                "subtitle": "Calculate your optimal bedtime based on sleep cycles to wake up refreshed",
+                "darkMode": "Dark Mode",
+                "lightMode": "Light Mode",
+                "settings": "Settings",
+                "howItWorks": "How It Works",
+                "proTip": "Pro tip:",
+                "close": "Close",
+                "save": "Save",
+                "cancel": "Cancel",
+                "ok": "OK"
+        },
+        "calculator": {
+                "title": "Sleep Calculator",
+                "wakeTime": "Wake-up Time",
+                "fallAsleepBuffer": "Fall Asleep Time",
+                "minutes": "minutes",
+                "cycles": "cycles",
+                "hours": "hours",
+                "bedtime": "Bedtime",
+                "totalSleep": "Total Sleep",
+                "quality": "Quality",
+                "optimal": "Optimal Sleep",
+                "good": "Good Sleep",
+                "minimal": "Minimal Sleep",
+                "copyTime": "Copy Time",
+                "exportCalendar": "Export to Calendar",
+                "saveSchedule": "Save Schedule",
+                "quickSelect": "Quick select",
+                "noBuffer": "No buffer",
+                "timeToFallAsleep": "Time to fall asleep"
+        },
+        "info": {
+                "sleepCycle": "Sleep Cycle",
+                "cycleLength": "Each sleep cycle lasts approximately 90 minutes and includes light sleep, deep sleep, and REM sleep phases.",
+                "calculation": "By calculating backwards from your desired wake-up time, we find the optimal bedtime that allows you to complete full sleep cycles.",
+                "wakeUpTip": "Waking up at the end of a complete cycle helps you feel more refreshed and alert.",
+                "sleepStages": "Sleep Stages",
+                "lightSleep": "Light Sleep",
+                "deepSleep": "Deep Sleep",
+                "remSleep": "REM Sleep",
+                "stageDescription": "Each stage plays a crucial role in physical restoration, memory consolidation, and mental recovery."
+        },
+        "settings": {
+                "title": "Settings",
+                "preferences": "Preferences",
+                "notifications": "Notifications",
+                "enableNotifications": "Enable Bedtime Reminders",
+                "reminderTime": "Reminder Time",
+                "preferredCycles": "Preferred Sleep Cycles",
+                "fallAsleepBuffer": "Fall Asleep Buffer",
+                "clearData": "Clear All Data",
+                "clearDataConfirm": "Are you sure you want to clear all saved data? This action cannot be undone.",
+                "dataCleared": "All data has been cleared successfully.",
+                "exportData": "Export Data",
+                "importData": "Import Data"
+        },
+        "pwa": {
+                "installTitle": "Install Sleep Calculator",
+                "installDescription": "Install this app on your device for quick access and offline use.",
+                "installButton": "Install App",
+                "dismissButton": "Not Now",
+                "iosInstallInstructions": "To install this app on your iOS device, tap the Share button and then 'Add to Home Screen'.",
+                "androidInstallInstructions": "To install this app on your Android device, tap the menu button and then 'Add to Home Screen'."
+        },
+        "quickReference": {
+                "title": "Quick Reference",
+                "cycles4": "4 Cycles (6h)",
+                "cycles5": "5 Cycles (7.5h)",
+                "cycles6": "6 Cycles (9h)",
+                "recommended": "Recommended",
+                "minimum": "Minimum"
+        },
+        "notifications": {
+                "bedtimeReminder": "Bedtime Reminder",
+                "timeToSleep": "Time to go to bed! Your optimal bedtime is",
+                "permissionDenied": "Notification permission denied",
+                "permissionGranted": "Notifications enabled successfully"
+        }
+}
