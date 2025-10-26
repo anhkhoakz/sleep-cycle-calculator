@@ -4,19 +4,21 @@ export function generateStaticParams() {
 	return locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 	params,
 }: {
 	children: React.ReactNode;
-	params: { locale: string };
+	params: Promise<{ locale: string }>;
 }) {
+	const { locale } = await params;
+
 	return (
-		<html lang={params.locale}>
+		<html lang={locale}>
 			<head>
 				<link
 					rel="manifest"
-					href={`/manifest${params.locale === "vi" ? "-vi" : ""}.json`}
+					href={`/manifest${locale === "vi" ? "-vi" : ""}.json`}
 				/>
 				<link rel="apple-touch-icon" href="/vite.svg" />
 			</head>
