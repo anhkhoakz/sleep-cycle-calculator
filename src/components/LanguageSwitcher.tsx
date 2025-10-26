@@ -12,7 +12,7 @@ import { GlobeIcon } from "@phosphor-icons/react/dist/ssr";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
-import { createLocalizedPathname } from "@/lib/i18n";
+import { createLocalizedPathname, type Locale } from "@/lib/i18n";
 
 const languages = [
 	{ code: "en", name: "English", flag: "🇺🇸" },
@@ -37,7 +37,7 @@ export default function LanguageSwitcher() {
 
 	const handleLanguageChange = (newLocale: string) => {
 		handleClose();
-		const newPath = createLocalizedPathname(pathname, newLocale as any);
+		const newPath = createLocalizedPathname(pathname, newLocale as Locale);
 		router.push(newPath);
 	};
 

@@ -110,7 +110,6 @@ class NotificationService {
 		const now = new Date();
 
 		if (reminderTime <= now) {
-			console.log("Reminder time is in the past, skipping");
 			return;
 		}
 
@@ -123,10 +122,6 @@ class NotificationService {
 				"bedtime-reminder",
 			);
 		}, delay);
-
-		console.log(
-			`Bedtime reminder scheduled for ${format(reminderTime, "h:mm a")}`,
-		);
 	}
 
 	async scheduleWakeUpReminder(calculation: SleepCalculation): Promise<void> {
@@ -141,7 +136,6 @@ class NotificationService {
 		const now = new Date();
 
 		if (reminderTime <= now) {
-			console.log("Wake up reminder time is in the past, skipping");
 			return;
 		}
 
@@ -154,10 +148,6 @@ class NotificationService {
 				"wakeup-reminder",
 			);
 		}, delay);
-
-		console.log(
-			`Wake up reminder scheduled for ${format(reminderTime, "h:mm a")}`,
-		);
 	}
 
 	private showNotification(title: string, body: string, tag: string): void {
@@ -189,7 +179,6 @@ class NotificationService {
 		this.initialize();
 		// Note: This is a simplified implementation
 		// In a real app, you'd want to store timeout IDs and clear them properly
-		console.log("All reminders cleared");
 	}
 
 	async testNotification(): Promise<void> {

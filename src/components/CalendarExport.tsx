@@ -49,8 +49,8 @@ const CalendarExport: React.FC<CalendarExportProps> = ({ calculation }) => {
 					text: `My sleep schedule: Bedtime at ${formatTime(calculation.bedtime)}, Wake up at ${formatTime(calculation.wakeTime)}`,
 					url: window.location.href,
 				});
-			} catch (error) {
-				console.log("Error sharing:", error);
+			} catch {
+				// User cancelled or error occurred
 			}
 		} else {
 			// Fallback: copy to clipboard
@@ -92,7 +92,7 @@ const CalendarExport: React.FC<CalendarExportProps> = ({ calculation }) => {
 				<DialogContent>
 					<Card variant="outlined" sx={{ mb: 2 }}>
 						<CardContent>
-							<Typography variant="h6" gutterBottom>
+							<Typography variant="h4" component="h4" gutterBottom>
 								Sleep Schedule Details
 							</Typography>
 

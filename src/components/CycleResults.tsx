@@ -89,7 +89,8 @@ const CycleResults: React.FC<CycleResultsProps> = ({
 	return (
 		<Box>
 			<Typography
-				variant="h6"
+				variant="h3"
+				component="h3"
 				gutterBottom
 				sx={{ display: "flex", alignItems: "center", gap: 1 }}
 			>
@@ -123,7 +124,7 @@ const CycleResults: React.FC<CycleResultsProps> = ({
 									<Box>
 										<Typography
 											variant="h5"
-											component="div"
+											component="p"
 											sx={{ fontWeight: 600 }}
 										>
 											{formatTime(calc.bedtime)}

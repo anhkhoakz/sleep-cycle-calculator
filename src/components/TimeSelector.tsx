@@ -82,7 +82,8 @@ const TimeSelector: React.FC<TimeSelectorProps> = ({
 	return (
 		<Box sx={{ mb: 3 }}>
 			<Typography
-				variant="h6"
+				variant="h3"
+				component="h3"
 				gutterBottom
 				sx={{ display: "flex", alignItems: "center", gap: 1 }}
 			>

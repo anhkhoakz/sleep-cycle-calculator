@@ -63,7 +63,8 @@ const QuickReferenceTable: React.FC = () => {
 		<Card>
 			<CardContent>
 				<Typography
-					variant="h6"
+					variant="h3"
+					component="h3"
 					gutterBottom
 					sx={{ display: "flex", alignItems: "center", gap: 1 }}
 				>

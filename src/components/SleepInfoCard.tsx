@@ -48,7 +48,8 @@ const SleepInfoCard: React.FC = () => {
 	return (
 		<Box sx={{ mb: 3 }}>
 			<Typography
-				variant="h6"
+				variant="h3"
+				component="h3"
 				gutterBottom
 				sx={{ display: "flex", alignItems: "center", gap: 1 }}
 			>
@@ -60,7 +61,8 @@ const SleepInfoCard: React.FC = () => {
 				<Card>
 					<CardContent>
 						<Typography
-							variant="h6"
+							variant="h4"
+							component="h4"
 							gutterBottom
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
@@ -118,7 +120,8 @@ const SleepInfoCard: React.FC = () => {
 				<Card>
 					<CardContent>
 						<Typography
-							variant="h6"
+							variant="h4"
+							component="h4"
 							gutterBottom
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
@@ -150,7 +153,8 @@ const SleepInfoCard: React.FC = () => {
 				<Accordion>
 					<AccordionSummary expandIcon={<CaretDownIcon />}>
 						<Typography
-							variant="h6"
+							variant="h4"
+							component="h4"
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
 							<TimerIcon color="primary" />

@@ -21,7 +21,7 @@ export const theme = createTheme({
 		},
 		text: {
 			primary: "#1e293b",
-			secondary: "#64748b",
+			secondary: "#475569", // Improved contrast (AA compliant)
 		},
 		success: {
 			main: "#10b981",
@@ -147,7 +147,7 @@ export const darkTheme = createTheme({
 		},
 		text: {
 			primary: "#f1f5f9",
-			secondary: "#cbd5e1",
+			secondary: "#e2e8f0", // Improved contrast for dark mode
 		},
 		success: {
 			main: "#34d399",

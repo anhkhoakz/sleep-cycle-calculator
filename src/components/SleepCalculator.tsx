@@ -106,7 +106,7 @@ const SleepCalculator: React.FC = () => {
 				{/* Header */}
 				<Box sx={{ textAlign: "center", mb: 4 }}>
 					<Typography
-						variant="h2"
+						variant="h1"
 						component="h1"
 						gutterBottom
 						sx={{
@@ -120,7 +120,12 @@ const SleepCalculator: React.FC = () => {
 					>
 						{t("common.title")}
 					</Typography>
-					<Typography variant="h6" color="text.secondary" paragraph>
+					<Typography
+						variant="h6"
+						component="p"
+						color="text.secondary"
+						paragraph
+					>
 						{t("common.subtitle")}
 					</Typography>
 
@@ -169,7 +174,8 @@ const SleepCalculator: React.FC = () => {
 					<Grid size={{ xs: 12, lg: 8 }}>
 						<Paper elevation={2} sx={{ p: 3, mb: 3 }}>
 							<Typography
-								variant="h5"
+								variant="h2"
+								component="h2"
 								gutterBottom
 								sx={{ display: "flex", alignItems: "center", gap: 1 }}
 							>
@@ -202,7 +208,7 @@ const SleepCalculator: React.FC = () => {
 							<QuickReferenceTable />
 
 							<Paper elevation={2} sx={{ p: 3, mt: 3 }}>
-								<Typography variant="h6" gutterBottom>
+								<Typography variant="h3" component="h3" gutterBottom>
 									{t("common.howItWorks")}
 								</Typography>
 								<Typography variant="body2" color="text.secondary" paragraph>
