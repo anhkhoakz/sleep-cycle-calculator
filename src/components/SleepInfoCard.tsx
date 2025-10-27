@@ -17,10 +17,9 @@ import {
 	BrainIcon,
 	CaretDownIcon,
 	CheckCircleIcon,
-	ClockIcon,
+	InfoIcon,
 	LightbulbIcon,
-	ShieldCheckIcon,
-	TimerIcon,
+	QuestionIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import type React from "react";
 
@@ -53,7 +52,7 @@ const SleepInfoCard: React.FC = () => {
 				gutterBottom
 				sx={{ display: "flex", alignItems: "center", gap: 1 }}
 			>
-				<BrainIcon color="primary" />
+				<BrainIcon color="#b48ead" />
 				Sleep Science & Tips
 			</Typography>
 
@@ -66,12 +65,12 @@ const SleepInfoCard: React.FC = () => {
 							gutterBottom
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
-							<ClockIcon color="primary" />
+							<InfoIcon color="#5e81ac" />
 							Understanding Sleep Cycles
 						</Typography>
 						<Typography variant="body2" color="text.secondary" paragraph>
 							Sleep isn't just one continuous state. It's made up of cycles that
-							repeat throughout the night, each lasting about 90 minutes.
+							repeat throughout the night, eacsh lasting about 90 minutes.
 							Understanding these cycles can help you wake up feeling refreshed.
 						</Typography>
 
@@ -125,7 +124,7 @@ const SleepInfoCard: React.FC = () => {
 							gutterBottom
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
-							<ShieldCheckIcon color="primary" />
+							<LightbulbIcon color="#ebcb8b" weight="fill" />
 							Sleep Hygiene Tips
 						</Typography>
 						<Typography variant="body2" color="text.secondary" paragraph>
@@ -157,7 +156,7 @@ const SleepInfoCard: React.FC = () => {
 							component="h4"
 							sx={{ display: "flex", alignItems: "center", gap: 1 }}
 						>
-							<TimerIcon color="primary" />
+							<QuestionIcon color="primary" />
 							Frequently Asked Questions
 						</Typography>
 					</AccordionSummary>

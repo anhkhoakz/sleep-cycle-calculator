@@ -12,8 +12,8 @@ import {
 } from "@mui/material";
 import {
 	CheckCircleIcon,
+	ClipboardTextIcon,
 	ClockIcon,
-	CopyIcon,
 	InfoIcon,
 	TimerIcon,
 	WarningIcon,
@@ -208,7 +208,7 @@ const CycleResults: React.FC<CycleResultsProps> = ({
 													transition: "color 0.2s ease-in-out",
 												}}
 											>
-												<CopyIcon size={16} />
+												<ClipboardTextIcon />
 											</IconButton>
 										</Tooltip>
 									</Box>

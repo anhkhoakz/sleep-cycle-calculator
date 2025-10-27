@@ -3,7 +3,6 @@ import {
 	Container,
 	Divider,
 	Drawer,
-	Fab,
 	FormControlLabel,
 	Grid,
 	IconButton,
@@ -12,16 +11,10 @@ import {
 	Tooltip,
 	Typography,
 } from "@mui/material";
-import {
-	GearIcon,
-	MoonIcon,
-	SunIcon,
-	TimerIcon,
-} from "@phosphor-icons/react/dist/ssr";
+import { GearIcon, MoonIcon, SunIcon } from "@phosphor-icons/react/dist/ssr";
 import type React from "react";
 import { useEffect, useState } from "react";
 import CycleResults from "@/components/CycleResults";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 import QuickReferenceTable from "@/components/QuickReferenceTable";
 import SettingsPanel from "@/components/SettingsPanel";
@@ -52,7 +45,7 @@ const SleepCalculator: React.FC = () => {
 	const [calculations, setCalculations] = useState(() =>
 		generateAllSleepOptions(wakeTime, fallAsleepBuffer),
 	);
-	const [preferences, setPreferences] = useState<SleepPreferences>(
+	const [_preferences, setPreferences] = useState<SleepPreferences>(
 		loadPreferences(),
 	);
 	const [settingsOpen, setSettingsOpen] = useState(false);
@@ -73,15 +66,17 @@ const SleepCalculator: React.FC = () => {
 
 	// Save preferences when they change
 	useEffect(() => {
-		const newPreferences: SleepPreferences = {
-			...preferences,
-			wakeTime: wakeTime.toISOString(),
-			fallAsleepBuffer,
-			isDarkMode,
-		};
-		setPreferences(newPreferences);
-		savePreferences(newPreferences);
-	}, [wakeTime, fallAsleepBuffer, isDarkMode, preferences]);
+		setPreferences((prev) => {
+			const newPreferences: SleepPreferences = {
+				...prev,
+				wakeTime: wakeTime.toISOString(),
+				fallAsleepBuffer,
+				isDarkMode,
+			};
+			savePreferences(newPreferences);
+			return newPreferences;
+		});
+	}, [wakeTime, fallAsleepBuffer, isDarkMode]);
 
 	const handleDarkModeToggle = () => {
 		setIsDarkMode(!isDarkMode);
@@ -111,21 +106,13 @@ const SleepCalculator: React.FC = () => {
 						gutterBottom
 						sx={{
 							fontWeight: 700,
-							background: "linear-gradient(45deg, #6366f1 30%, #8b5cf6 90%)",
 							backgroundClip: "text",
-							WebkitBackgroundClip: "text",
-							WebkitTextFillColor: "transparent",
 							mb: 2,
 						}}
 					>
 						{t("common.title")}
 					</Typography>
-					<Typography
-						variant="h6"
-						component="p"
-						color="text.secondary"
-						paragraph
-					>
+					<Typography variant="h6" component="p" color="text.secondary">
 						{t("common.subtitle")}
 					</Typography>
 
@@ -164,8 +151,6 @@ const SleepCalculator: React.FC = () => {
 								<GearIcon />
 							</IconButton>
 						</Tooltip>
-
-						<LanguageSwitcher />
 					</Box>
 				</Box>
 
@@ -246,27 +231,6 @@ const SleepCalculator: React.FC = () => {
 
 			{/* PWA Install Prompt */}
 			<PWAInstallPrompt />
-
-			{/* Floating Action Button for quick access */}
-			<Tooltip title="Scroll to calculator">
-				<Fab
-					color="primary"
-					sx={{
-						position: "fixed",
-						bottom: 24,
-						right: 24,
-						background: "linear-gradient(45deg, #6366f1 30%, #8b5cf6 90%)",
-					}}
-					onClick={() => {
-						const calculatorElement = document.querySelector(
-							"[data-calculator-section]",
-						);
-						calculatorElement?.scrollIntoView({ behavior: "smooth" });
-					}}
-				>
-					<TimerIcon />
-				</Fab>
-			</Tooltip>
 		</Box>
 	);
 };

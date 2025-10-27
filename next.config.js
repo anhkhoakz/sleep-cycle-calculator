@@ -1,11 +1,20 @@
+// @ts-check
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
-	// Production optimizations
 	compiler: {
-		// Remove console logs in production
-		removeConsole: process.env.NODE_ENV === "production",
+		removeConsole: true,
 	},
+	compress: true,
+	crossOrigin: "anonymous",
+	experimental: {
+		cssChunking: true,
+		useLightningcss: true,
+	},
+	htmlLimitedBots:
+		/[\w-]+-Google|Google-[\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight/i,
+
 	// PWA configuration
 	async headers() {
 		return [

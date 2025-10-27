@@ -12,7 +12,7 @@ import {
 	TableRow,
 	Typography,
 } from "@mui/material";
-import { ClockIcon, TimerIcon } from "@phosphor-icons/react/dist/ssr";
+import { NotepadIcon, TimerIcon } from "@phosphor-icons/react/dist/ssr";
 import type React from "react";
 
 const QuickReferenceTable: React.FC = () => {
@@ -68,7 +68,7 @@ const QuickReferenceTable: React.FC = () => {
 					gutterBottom
 					sx={{ display: "flex", alignItems: "center", gap: 1 }}
 				>
-					<ClockIcon color="primary" />
+					<NotepadIcon color="primary" />
 					Quick Reference
 				</Typography>
 

@@ -1,43 +1,19 @@
-// This is the list of supported locales
-export const locales = ["en", "vi"] as const;
-export type Locale = (typeof locales)[number];
+// This is the default locale - only English is supported now
+export const defaultLocale = "en";
+export type Locale = "en";
 
-// This is the default locale
-export const defaultLocale: Locale = "en";
+export const locales = [defaultLocale] as const;
 
-// This function checks if the locale is supported
-export function isValidLocale(locale: string): locale is Locale {
-	return locales.includes(locale as Locale);
-}
+// Helper to get translations
+export function getTranslation(key: string): string {
+	const keys = key.split(".");
+	const enTranslations = require("../../locales/en/common.json");
+	
+	let value: unknown = enTranslations;
 
-// This function gets the locale from the pathname
-export function getLocaleFromPathname(pathname: string): Locale {
-	const segments = pathname.split("/");
-	const locale = segments[1];
-
-	if (isValidLocale(locale)) {
-		return locale;
+	for (const k of keys) {
+		value = (value as Record<string, unknown>)?.[k];
 	}
 
-	return defaultLocale;
-}
-
-// This function creates a localized pathname
-export function createLocalizedPathname(
-	pathname: string,
-	locale: Locale,
-): string {
-	const segments = pathname.split("/");
-
-	// Remove existing locale if present
-	if (isValidLocale(segments[1])) {
-		segments.splice(1, 1);
-	}
-
-	// Add new locale
-	if (locale !== defaultLocale) {
-		segments.splice(1, 0, locale);
-	}
-
-	return segments.join("/") || "/";
+	return typeof value === "string" ? value : key;
 }
